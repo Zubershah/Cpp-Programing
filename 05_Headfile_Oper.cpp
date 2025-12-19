@@ -15,15 +15,15 @@ int main()
     int a = 5, b = 2;
 
     cout << "Arthimetic Operator's \n";
-    cout << "the value of a+b is " << a + b << "\n";
-    cout << "the value of a-b is " << a - b << "\n";
-    cout << "the value of a*b is " << a * b << "\n";
-    cout << "the value of a/b is " << a / b << "\n";
-    cout << "the value of a%b is " << a % b << "\n";
-    cout << "the value of a++ is " << a++ << "\n";
-    cout << "the value of a-- is " << a-- << "\n";
-    cout << "the value of ++a is " << ++a << "\n";
-    cout << "the value of --a is " << --a << "\n";
+    cout << "the value of a+b is " << a + b << "\n"; // 7
+    cout << "the value of a-b is " << a - b << "\n"; // 3
+    cout << "the value of a*b is " << a * b << "\n"; // 10
+    cout << "the value of a/b is " << a / b << "\n"; // 2
+    cout << "the value of a%b is " << a % b << "\n"; // 1
+    cout << "the value of a++ is " << a++ << "\n";   // 5
+    cout << "the value of a-- is " << a-- << "\n";   // 6
+    cout << "the value of ++a is " << ++a << "\n";   // 6
+    cout << "the value of --a is " << --a << "\n";   // 5
     cout << "\n";
 
     /*
@@ -34,19 +34,19 @@ int main()
     */
 
     cout << "comparision Operator's \n";
-    cout << "the value of a == b is " << (a == b) << "\n";
-    cout << "the value of a != b is " << (a != b) << "\n";
-    cout << "the value of a > b is " << (a > b) << "\n";
-    cout << "the value of a < b is " << (a < b) << "\n";
-    cout << "the value of a >= b is " << (a >= b) << "\n";
-    cout << "the value of a <= b is " << (a <= b) << "\n";
+    cout << "the value of a == b is " << (a == b) << "\n"; // 0
+    cout << "the value of a != b is " << (a != b) << "\n"; // 1
+    cout << "the value of a > b is " << (a > b) << "\n";   // 1
+    cout << "the value of a < b is " << (a < b) << "\n";   // 0
+    cout << "the value of a >= b is " << (a >= b) << "\n"; // 1
+    cout << "the value of a <= b is " << (a <= b) << "\n"; // 0
     cout << "\n";
 
     int c = 5, d = 0;
     cout << "logical Operator's \n";
-    cout << "the value of c && d is " << (c && d) << "\n";
-    cout << "the value of c || d is " << (c || d) << "\n";
-    cout << "the value of !c is " << (!c) << "\n";
+    cout << "the value of c && d is " << (c && d) << "\n"; // 0
+    cout << "the value of c || d is " << (c || d) << "\n"; // 1
+    cout << "the value of !c is " << (!c) << "\n";         // 0
 
     return 0;
 }

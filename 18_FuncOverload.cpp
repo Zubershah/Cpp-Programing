@@ -21,6 +21,6 @@ int add(int a, int b, int c)
 int main()
 {
     cout << "the sum of 3 and 6 is " << add(3, 6.0) << endl;
-    cout << "the sum of 3, 6, and 6 is " << add(3, 6, 9) << endl;
+    cout << "the sum of 3, 6, and 9 is " << add(3, 6, 9) << endl;
     return 0;
 }

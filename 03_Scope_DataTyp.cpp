@@ -2,7 +2,7 @@
 int V = 8; // global variable
 void Scope()
 {
-    std::cout << "Scope function does't local variable " << V << "\n";
+    std::cout << "Scope function does't contain local variable " << V << "\n";
 }
 int main()
 {

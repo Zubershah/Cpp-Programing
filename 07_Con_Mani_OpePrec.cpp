@@ -21,7 +21,7 @@ int main()
 
     // Operation Precedence
     int x = 3, y = 4;
-    int z = ((((x * 5) + y) - 45) + (87 / 2));
+    int z = x * 5 + y - 45 + 87 / 2;
     cout << z;
     return 0;
 }

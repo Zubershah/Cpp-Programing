@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+
 /*
 The compiler takes the body of the function and essentially "copy-pastes" it directly into the line where it was called.
 This eliminates the jump and the overhead.
@@ -16,7 +17,7 @@ inline int product(int x, int y)
 int product(int x, int y)
 {
     static int c = 0; // this execute only once
-    c = c + 1;        // if function called again the value of c will be reatined;
+    c = c + 1;        // if function called again the previous value of c will be retained;
     return x * y + c;
 }
 int main()

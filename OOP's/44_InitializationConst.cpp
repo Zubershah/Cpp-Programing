@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 /*
-constructin (arguments) : initialization-section
+Syntax:
+constructor (arguments) : initialization-section
 {
 // body
 }

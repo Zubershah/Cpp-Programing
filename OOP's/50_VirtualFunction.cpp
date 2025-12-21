@@ -16,16 +16,19 @@
 //     void display()
 //     {
 //         cout << "the derived class variable is " << varderived << endl;
-//         cout << "the base class variable is " << varderived << endl;
+//         cout << "the base class variable is " << var << endl;
 //     }
 // };
 // int main()
 // {
 //     base *ptr;
-//     // base obj;
 //     derived objderived;
 //     ptr = &objderived;
-//     ptr->display();
+//     ptr->var = 5;
+//     /*
+//     stil we can't set int varderived = 4; Reason: ptr is base class
+//     */
+//     ptr->display(); // here displayed will be derived class Reason: Virtual function (virtual void display())
 //     return 0;
 // }
 
@@ -33,29 +36,29 @@
 #include <iostream>
 #include <string.h>
 using namespace std;
-class cwh
+class course
 {
 protected:
     string title;
     float rating;
 
 public:
-    cwh(string s, float r)
+    course(string s, float r)
     {
         title = s;
         rating = r;
     }
     virtual void display()
     {
-        cout << "bogus code" << endl;
+        cout << "No content" << endl;
     }
 };
-class cwhvideo : public cwh
+class coursevideo : public course
 {
     float vidlen;
 
 public:
-    cwhvideo(string s, float r, float vl) : cwh(s, r)
+    coursevideo(string s, float r, float vl) : course(s, r)
     {
         vidlen = vl;
     }
@@ -66,12 +69,12 @@ public:
              << "length of this video is " << vidlen << " minutes" << endl;
     }
 };
-class cwhtext : public cwh
+class coursetext : public course
 {
     int wordcount;
 
 public:
-    cwhtext(string s, float r, int wc) : cwh(s, r)
+    coursetext(string s, float r, int wc) : course(s, r)
     {
         wordcount = wc;
     }
@@ -89,22 +92,22 @@ int main()
     int wordcount;
 
     // for video
-    title = "Django tutorial";
+    title = "C++ tutorial";
     rating = 4.5;
     vidlen = 5.51;
-    cwhvideo Djvideo(title, rating, vidlen);
-    // Djvideo.display();
+    coursevideo video(title, rating, vidlen);
+    // video.display();
 
     // for word
-    title = "Django tutorial";
-    rating = 4.5;
+    title = "C++ tutorial";
+    rating = 4.1;
     wordcount = 5200;
-    cwhtext Djtext(title, rating, wordcount);
-    // Djtext.display();
+    coursetext text(title, rating, wordcount);
+    // text.display();
 
-    cwh *tuts[2];
-    tuts[0] = &Djvideo;
-    tuts[1] = &Djtext;
+    course *tuts[2];
+    tuts[0] = &video;
+    tuts[1] = &text;
 
     tuts[0]->display();
     cout << endl;

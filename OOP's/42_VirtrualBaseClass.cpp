@@ -70,9 +70,9 @@ public:
 int main()
 {
     result check;
-    check.setrollnum(420);
-    check.setmarks(81, 87);
-    check.setscore(90);
+    check.setrollnum(65);
+    check.setmarks(81.5, 85.4);
+    check.setscore(90.5);
     check.display();
     return 0;
 }

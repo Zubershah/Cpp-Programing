@@ -17,8 +17,8 @@ public:
 };
 int main()
 {
-    //     complex c1;
-    //     complex *ptr = &c1;
+    // complex c1;
+    // complex *ptr = &c1;
     complex *ptr = new complex;
 
     (*ptr).setdata(1, 54); // ptr->setdata(1, 54);

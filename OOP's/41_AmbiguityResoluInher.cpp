@@ -13,7 +13,7 @@ class base2
 public:
     void greet()
     {
-        cout << "kaise hoo" << endl;
+        cout << "I am fine" << endl;
     }
 };
 class derived : public base1, public base2

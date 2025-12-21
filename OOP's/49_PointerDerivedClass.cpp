@@ -21,23 +21,22 @@ public:
 };
 int main()
 {
-    base *ptr;
-    // base obj;
+    // base *ptr;
+    // derived objderived;
+    // ptr = &objderived;
+    // ptr->var = 57;
+    // ptr->display();
+
+    /*
+    pointer is base class.
+    we cannot set dervied class int varderived; nor display function
+    */
+
     derived objderived;
-    ptr = &objderived;
-    ptr->var = 57;
-    ptr->display();
-
-    // /*
-    // pointer is base class.
-    // we cannot set dervied class int varderived; nor display function
-    // Reason: pointer is base class
-    // */
-
     derived *ptr1;
     ptr1 = &objderived;
     ptr1->varDerived = 8;
-    ptr1->var=6;
+    ptr1->var = 6;
     ptr1->display();
     return 0;
 }

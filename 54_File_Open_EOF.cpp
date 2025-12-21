@@ -1,5 +1,5 @@
 #include <iostream>
-#include <fstream> 
+#include <fstream>
 using namespace std;
 int main()
 {
@@ -12,20 +12,25 @@ int main()
     ifstream out;
     string content, contentnext;
     out.open("52_samplefile.txt");
-    // out >> content;
+    /*
+    assume below content contain in file:
+    this is my name
+    zooby shah
+    */
+    // out >> content;                               // this --> content
+    // cout << content;                              // output: this
+    // out >> content >> contentnext;                // is --> content, my --> contentnext
+    // cout << " " << content << " " << contentnext; // output: is my
+
+    // this print complete oneline sentence
+    // getline(out, content);
     // cout << content;
 
-    // out >> content>>contentnext;
-    // cout << content<<contentnext;  //thisis
-    
     while (out.eof() == 0)
     {
         getline(out, content);
-        cout << content<<endl;
+        cout << content << endl;
     }
-
-    // getline(out, content); 
-    // cout << content;
     out.close();
     return 0;
 }

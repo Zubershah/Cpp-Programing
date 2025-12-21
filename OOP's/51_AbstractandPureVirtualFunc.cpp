@@ -1,14 +1,14 @@
 #include <iostream>
 #include <string.h>
 using namespace std;
-class cwh
+class course
 {
 protected:
     string title;
     float rating;
 
 public:
-    cwh(string s, float r)
+    course(string s, float r)
     {
         title = s;
         rating = r;
@@ -19,15 +19,16 @@ public:
     unlike in virtual function the base class display(); function will compile
 
     Abstract base class means not used for creating object instead it is used to inherit another class
+    You can use base-class pointers to derived class objects
     Abstract base class means atleast one pure virtual functilon exist.
     */
 };
-class cwhvideo : public cwh
+class coursevideo : public course
 {
     float vidlen;
 
 public:
-    cwhvideo(string s, float r, float vl) : cwh(s, r)
+    coursevideo(string s, float r, float vl) : course(s, r)
     {
         vidlen = vl;
     }
@@ -38,12 +39,12 @@ public:
              << "length of this video is " << vidlen << " minutes" << endl;
     }
 };
-class cwhtext : public cwh
+class coursetext : public course
 {
     int wordcount;
 
 public:
-    cwhtext(string s, float r, int wc) : cwh(s, r)
+    coursetext(string s, float r, int wc) : course(s, r)
     {
         wordcount = wc;
     }
@@ -61,22 +62,22 @@ int main()
     int wordcount;
 
     // for video
-    title = "Django tutorial";
+    title = "C++ tutorial";
     rating = 4.5;
     vidlen = 5.51;
-    cwhvideo Djvideo(title, rating, vidlen);
-    // Djvideo.display();
+    coursevideo video(title, rating, vidlen);
+    // video.display();
 
     // for word
-    title = "Django tutorial";
+    title = "C++ tutorial";
     rating = 4.5;
     wordcount = 5200;
-    cwhtext Djtext(title, rating, wordcount);
-    // Djtext.display();
+    coursetext text(title, rating, wordcount);
+    // text.display();
 
-    cwh *tuts[2];
-    tuts[0] = &Djvideo;
-    tuts[1] = &Djtext;
+    course *tuts[2];
+    tuts[0] = &video;
+    tuts[1] = &text;
 
     tuts[0]->display();
     cout << endl;

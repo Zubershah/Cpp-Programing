@@ -13,9 +13,9 @@ int main()
     ifstream read("52_Samplefile.txt");
     string content;
     // read >> content;
-    // cout << content << endl;
+    // cout << content;
     getline(read, content);
-    cout << content << endl;
+    cout << content;
     read.close();
     return 0;
 }

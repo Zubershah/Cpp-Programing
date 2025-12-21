@@ -46,8 +46,8 @@ int main()
     employee zooby; // object created ----> zooby
     /*
     zooby.a = 45;
-    Variables a, b, and c are private.
-    This means only functions inside this class can touch them.
+    Variables a, b, and c are private members.
+    This means only public functions inside the class can touch them.
     The main() function cannot access them directly.
     This is for security and data protection.
     */

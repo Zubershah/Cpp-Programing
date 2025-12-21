@@ -38,7 +38,9 @@ bank ::bank(int p, int y, int r)
 void bank ::print()
 {
     cout << "principal amount was " << prinicpal
-         << " return value after " << years << " years is " << retval << endl;
+         << " /-, return value after " << years
+         << " years for the interest rate of " << interest
+         << " \% the return amount is " << retval << "/-\n";
 }
 
 int main()

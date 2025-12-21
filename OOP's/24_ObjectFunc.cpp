@@ -26,12 +26,12 @@ int main()
 {
     complex c1, c2, c3;
     c1.setdata(1, 2);
-    c1.print();
-
     c2.setdata(3, 4);
-    c2.print();
-
     c3.setdatabysum(c1, c2);
+
+    c1.print();
+    c2.print();
     c3.print();
+
     return 0;
 }

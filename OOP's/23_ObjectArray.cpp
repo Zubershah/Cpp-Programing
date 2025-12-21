@@ -8,7 +8,8 @@ class employee
 public:
     void setid(void)
     {
-        salary = 1.2;
+        cout << "enter the salary of employee\n";
+        cin >> salary;
         cout << "enter the id of employee" << endl;
         cin >> id;
     }
@@ -19,9 +20,16 @@ public:
 };
 int main()
 {
-    // employee zooby, shah, khan, pathan;
-    // zooby.setid();
-    // zooby.getid();
+//     employee zooby, shah, khan, pathan;
+//     zooby.setid();
+//     shah.setid();
+//     khan.setid();
+//     pathan.setid();
+
+//     zooby.getid();
+//     shah.getid();
+//     khan.getid();
+//     pathan.getid();
 
     employee fb[4];
     for (int i = 0; i < 4; i++)

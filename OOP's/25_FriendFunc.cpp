@@ -27,10 +27,10 @@ int main()
 {
     complex c1, c2, sum;
     c1.setnumber(1, 4);
-    c1.print();
     c2.setnumber(5, 8);
+    sum = sumcomplex(c1, c2); // sum.sumcomplex(c1,c2); is invalid Reason: sumcomplex() is not a part of class
+    c1.print();
     c2.print();
-    sum = sumcomplex(c1, c2); // sum.sumcomplex(c1,c2); is invalid
     sum.print();
     return 0;
 }

@@ -5,20 +5,9 @@ class shop
 {
     int itemid[100];
     int itemprice[100];
-    int counter;
+    int counter = 0;
 
 public:
-    /*
-    Runs AUTOMATICALLY. Note: No "void" and name is class---> "shop".
-        shop()
-        {
-            counter = 0;
-        }
-    */
-    void initcounter(void)
-    {
-        counter = 0;
-    }
     void displayprice(void);
     void setprice(void);
 };
@@ -43,7 +32,6 @@ void shop ::displayprice(void)
 int main()
 {
     shop business;
-    business.initcounter(); // another method is constructor
     business.setprice();
     business.setprice();
     business.setprice();

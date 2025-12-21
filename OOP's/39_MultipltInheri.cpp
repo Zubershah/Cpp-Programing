@@ -34,7 +34,6 @@ class derived : public base1, public base2
 public:
     void show()
     {
-        // geta(10);
         cout << "the value of base 1 is " << a << " and value of base 2 is " << b << endl;
         cout << "the sum of base 1 and base 2 is " << a + b << endl;
     }

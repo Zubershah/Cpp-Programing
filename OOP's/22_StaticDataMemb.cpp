@@ -5,8 +5,8 @@ class employee
     int id;
     static int count; // default value is 0
     /*
-    This tells the compiler: "Don't create a new count for every employee.
-    Just create one count for the whole class to share."
+    This tells the compiler: "Don't create a new count for every class employee object.
+    Just create one count for the whole class employee object to share."
     */
 
 public:
@@ -22,10 +22,10 @@ public:
         cout << "the id of the employee is " << id << " and this is employee number " << count << endl;
     }
 
-    static void getcount(void) //Static functions can ONLY access other static variables.
-    {
-        cout << "the value of count is " << count << endl;
-    }
+    // static void getcount(void) //Static functions can ONLY access other static variables.
+    // {
+    //     cout << "the value of count is " << count << endl;
+    // }
 };
 int employee ::count; // This is mandatory for static variables.
 int main()
@@ -33,13 +33,14 @@ int main()
     employee zooby, shah, khan;
     zooby.setdata();
     zooby.getdata();
-    
+
     shah.setdata();
     shah.getdata();
-    
+
     khan.setdata();
     khan.getdata();
-    employee::getcount(); // this is mandatory for calling static function if needed
+    
+    // employee::getcount(); // this is mandatory for calling static function if needed
     
     return 0;
 }

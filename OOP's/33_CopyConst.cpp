@@ -26,15 +26,12 @@ public:
 };
 int main()
 {
-    number x(1), y, z, z2; // for this type of object creation default constructor is mandatory + parameterized constructor
+    number x(1), y, z, z2; // for this type of object creation default constructor is mandatory
     x.display();
     y.display();
 
     z = number(56);
     z.display();
-
-    number w(64);
-    w.display();
 
     number z1(x); // copy constuctor invoked
     z1.display();
@@ -42,7 +39,7 @@ int main()
     z2 = z; // copy constructor not invoked. Reason: object z2 is alraedy created
     z2.display();
 
-    number z3 = z; // copy constructor invoked. Reason: new object z3 created
+    number z3 = y; // copy constructor invoked. Reason: new object z3 created
     z3.display();
     return 0;
 }

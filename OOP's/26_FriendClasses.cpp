@@ -3,12 +3,6 @@ using namespace std;
 class complex
 {
     int a, b;
-    /*
-    // individual declare friend function
-    */
-    //    friend int calculator ::sumcomplex(complex, complex);
-    //    friend int calculator ::imagsumcomplex(complex, complex);
-
     // Declare entire class as a friend
     friend class calculator;
 

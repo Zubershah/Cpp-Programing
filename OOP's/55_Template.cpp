@@ -4,19 +4,24 @@ template <class T>
 class vector
 {
 public:
-    T *arr;
+    T *arr; // data_type *arr;
     int size;
-    vector(int m)
+    vector(int m) // m = 3;
     {
-        size = m;
-        arr = new T[size];
+        size = m;          // size = 3;
+        arr = new T[size]; // array of the 3 data_type pointing to 1st index
     }
     T dotproduct(vector v)
     {
         T d = 0;
         for (int i = 0; i < size; i++)
         {
-            d += arr[i] * v.arr[i];
+            d += this->arr[i] * v.arr[i];
+            /*
+            arr[i]: You did not specify an object.
+            In C++, when you access a class member variable without specifying an object,
+            it automatically refers to the Calling Object (v1).
+            */
         }
         return d;
     }

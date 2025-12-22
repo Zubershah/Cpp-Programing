@@ -20,18 +20,21 @@ public:
     }
     void display()
     {
-        cout << data1 <<"\t"<< data2 << endl;
+        cout << data1 << "\t" << data2 << endl;
     }
 };
 int main()
 {
-    myclass<int, char> obj(1, 'F');
-    obj.display();
+    // myclass<int, char> obj(1, 'F');
+    // obj.display();
 
-    myclass<int, float> obj1(1, 5.5);
-    obj1.display();
+    // myclass<int, float> obj1(1, 5.5);
+    // obj1.display();
 
-    myclass<float, char> obj2(1.5, 'F');
+    // myclass<float, char> obj2(1.5, 'F');
+    // obj2.display();
+
+    myclass<char, char> obj2('Z', 'F');
     obj2.display();
     return 0;
 }

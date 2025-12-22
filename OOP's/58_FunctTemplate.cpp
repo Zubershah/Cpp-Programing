@@ -25,18 +25,25 @@ void swapp(Z &a, Z &b)
 
 int main()
 {
-    float answer;
+    // float answer;
     // answer = function(5, 2);
     // cout << "the answer is " << answer << endl;
     // answer = function(5, 2.5f);
     // cout << "the answer is " << answer << endl;
 
-    answer = function(5.5, 2.5);
+    float answer;
+    answer = function(5.7, 2.5);
     cout << "the answer is " << answer << endl;
 
     float x = 45.5, y = 5.75;
     swapp(x, y);
     cout << x << endl
-         << y;
+         << y << endl;
+
+    int x1 = 4, y1 = 5;
+    swapp(x1, y1);
+    cout << x1 << endl
+         << y1;
+
     return 0;
 }

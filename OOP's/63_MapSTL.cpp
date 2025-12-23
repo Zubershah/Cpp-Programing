@@ -1,4 +1,4 @@
-// Map is a Associative array
+/* Map is a Associative array */
 #include <iostream>
 #include <string>
 #include <map>
